@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-9pknxWCiN+Qz5feODGeMBmiD4WIf/Z147kv0ZneCb0g='; script-src 'sha256-fLz+jQlF3wxw5jqHtG8JDt17UYM/U0xY/XOra5rz2Sc='; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Siden finnes ikke – Tromsø / Romsa</title>
+    <style>
+      :root {
+        color: #102733;
+        background: #faf8f1;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 48rem;
+        padding: clamp(4rem, 12vw, 9rem) 1.5rem;
+      }
+
+      .eyebrow {
+        color: #a84435;
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        font-weight: 400;
+        letter-spacing: -0.045em;
+        line-height: 0.98;
+        margin: 1rem 0 1.5rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 2rem;
+      }
+
+      a {
+        border: 1px solid currentColor;
+        color: inherit;
+        padding: 0.65rem 0.95rem;
+        text-underline-offset: 0.22em;
+      }
+
+      :focus-visible {
+        outline: 3px solid #c4933f;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">404 · Tromsø / Romsa</p>
+      <h1>Siden finnes ikke</h1>
+      <p>Gå tilbake til tidslinjen:</p>
+      <nav aria-label="Velg språk">
+        <a lang="nb" href="#" data-language-path="no/">Norsk</a>
+        <a lang="en" href="#" data-language-path="en/">English</a>
+        <a lang="se" href="#" data-language-path="sme/">Davvisámegiella</a>
+      </nav>
+      <noscript>
+        <p>Språklenkene på denne feilsiden trenger JavaScript for å finne prosjektets mappe. Bruk nettleserens tilbakeknapp for å gå tilbake.</p>
+      </noscript>
+    </main>
+    <script>
+      // Leave empty for automatic GitHub Pages project-path detection.
+      // For a custom domain with a subpath, set one value such as "/repository-name/".
+      const REPOSITORY_BASE_PATH = "";
+
+      function normalizeBasePath(value) {
+        const trimmedValue = value.trim();
+        if (!trimmedValue) return "";
+        if (trimmedValue === "/") return "/";
+        if (!trimmedValue.startsWith("/")) return "";
+
+        const segments = trimmedValue.split("/").filter(Boolean);
+        const safeSegment = /^[A-Za-z0-9._~-]+$/;
+        if (!segments.length || segments.some((segment) => !safeSegment.test(segment))) return "";
+
+        return `/${segments.join("/")}/`;
+      }
+
+      function getRepositoryBasePath() {
+        const configuredPath = normalizeBasePath(REPOSITORY_BASE_PATH);
+        if (configuredPath) return configuredPath;
+
+        if (window.location.hostname.toLowerCase().endsWith(".github.io")) {
+          const firstPathSegment = window.location.pathname.split("/").filter(Boolean)[0];
+          if (/^[A-Za-z0-9._~-]+$/.test(firstPathSegment || "")) {
+            return `/${firstPathSegment}/`;
+          }
+        }
+
+        return "/";
+      }
+
+      const repositoryBasePath = getRepositoryBasePath();
+      document.querySelectorAll("[data-language-path]").forEach((link) => {
+        link.setAttribute("href", repositoryBasePath + link.getAttribute("data-language-path"));
+      });
+    </script>
+  </body>
+</html>
