@@ -196,12 +196,68 @@
     return section;
   }
 
+  const imageDialog = element("dialog", "image-dialog");
+  imageDialog.setAttribute("aria-labelledby", "image-dialog-title");
+  const dialogTitle = element("h2", "image-dialog__title", data.page.imageDialogTitle);
+  dialogTitle.id = "image-dialog-title";
+  const closeImage = element("button", "image-dialog__close", data.page.closeImage);
+  closeImage.type = "button";
+  closeImage.autofocus = true;
+  const dialogHeader = element("div", "image-dialog__header");
+  dialogHeader.append(dialogTitle, closeImage);
+  const enlargedImage = element("img", "image-dialog__image");
+  const dialogCaption = element("p", "image-dialog__caption");
+  const dialogCredit = element("p", "image-dialog__credit");
+  const imageFileLink = externalLink("", data.page.openImageFile, "arrowUpRight");
+  imageFileLink.className = "image-dialog__file-link";
+  imageDialog.append(dialogHeader, enlargedImage, dialogCaption, dialogCredit, imageFileLink);
+  let imageOpener;
+
+  function openImage(image, opener) {
+    imageOpener = opener;
+    enlargedImage.src = assetPath(image.src);
+    enlargedImage.alt = image.alt;
+    dialogCaption.textContent = image.caption;
+    dialogCredit.replaceChildren(document.createTextNode(image.credit + " · "), sourceName(image));
+    imageFileLink.setAttribute("href", assetPath(image.src));
+    imageDialog.showModal();
+    closeImage.focus();
+  }
+
+  closeImage.addEventListener("click", function () {
+    imageDialog.close();
+  });
+  imageDialog.addEventListener("close", function () {
+    if (imageOpener && imageOpener.isConnected) imageOpener.focus({ preventScroll: true });
+    imageOpener = null;
+  });
+  imageDialog.addEventListener("keydown", function (event) {
+    if (event.key !== "Tab") return;
+    const controls = Array.from(imageDialog.querySelectorAll("button, a[href]"));
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+
   function gallery(images, eventNumber) {
     const galleryClass = images.length === 1 ? "gallery--single" : images.length === 3 ? "gallery--three" : "gallery--pair";
     const container = element("div", "gallery " + galleryClass);
     images.forEach(function (image, imageIndex) {
       const figure = document.createElement("figure");
-      const wrap = element("div", "gallery__image-wrap");
+      const wrap = element("button", "gallery__image-wrap");
+      wrap.type = "button";
+      wrap.setAttribute("aria-label", data.page.openImage + ": " + image.caption);
+      wrap.setAttribute("aria-haspopup", "dialog");
+      wrap.setAttribute("aria-controls", "image-dialog");
+      wrap.addEventListener("click", function () {
+        openImage(image, wrap);
+      });
       const img = document.createElement("img");
       img.src = assetPath(image.src);
       img.alt = image.alt;
@@ -362,6 +418,8 @@
     footer(),
   );
   mount.appendChild(main);
+  imageDialog.id = "image-dialog";
+  mount.appendChild(imageDialog);
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const reveals = document.querySelectorAll(".reveal");

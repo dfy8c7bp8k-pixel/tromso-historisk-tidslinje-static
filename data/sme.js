@@ -766,6 +766,10 @@ const allTimelineImages = [
 ];
 
 const page = {
+  openImage: "Forstørr bilde",
+  imageDialogTitle: "Bildeforstørrelse",
+  closeImage: "Lukk",
+  openImageFile: "Åpne bildefilen i ny fane",
   code: "sme",
   htmlLang: "nb",
   title: "Tromsø / Romsa – Northern Sámi translation template",

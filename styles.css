@@ -715,6 +715,78 @@ a {
   min-height: 10rem;
   overflow: hidden;
   position: relative;
+  cursor: zoom-in;
+  padding: 0;
+  width: 100%;
+}
+
+.gallery__image-wrap:focus-visible,
+.image-dialog button:focus-visible,
+.image-dialog a:focus-visible {
+  outline: 3px solid #b15b32;
+  outline-offset: 3px;
+}
+
+.image-dialog {
+  background: var(--white);
+  border: 0;
+  box-sizing: border-box;
+  color: var(--ink);
+  margin: auto;
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow: auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  width: min(64rem, calc(100% - 2rem));
+  max-width: none;
+}
+
+.image-dialog::backdrop {
+  background: rgba(6, 25, 35, 0.85);
+}
+
+.image-dialog__header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.image-dialog__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.image-dialog__close {
+  background: var(--ink);
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  font: inherit;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.2rem;
+}
+
+.image-dialog__image {
+  display: block;
+  height: auto;
+  max-height: 60vh;
+  max-height: 60dvh;
+  object-fit: contain;
+  width: 100%;
+}
+
+.image-dialog__caption,
+.image-dialog__credit,
+.image-dialog__file-link {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.image-dialog__credit {
+  font-size: 0.875rem;
 }
 
 .gallery--single .gallery__image-wrap {

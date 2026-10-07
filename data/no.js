@@ -755,6 +755,10 @@ const allTimelineImages = [
 ];
 
 const page = {
+  openImage: "Forstørr bilde",
+  imageDialogTitle: "Bildeforstørrelse",
+  closeImage: "Lukk",
+  openImageFile: "Åpne bildefilen i ny fane",
   code: "no",
   htmlLang: "nb",
   title: "Tromsø / Romsa – historisk tidslinje",

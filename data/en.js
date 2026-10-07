@@ -764,6 +764,10 @@ const allTimelineImages = [
 ];
 
 const page = {
+  openImage: "Forstørr bilde",
+  imageDialogTitle: "Bildeforstørrelse",
+  closeImage: "Lukk",
+  openImageFile: "Åpne bildefilen i ny fane",
   code: "en",
   htmlLang: "nb",
   title: "Tromsø / Romsa – English translation template",
