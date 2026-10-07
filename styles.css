@@ -831,17 +831,6 @@ a {
   position: relative;
 }
 
-.reconciliation::after {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
-  content: "";
-  height: 27rem;
-  position: absolute;
-  right: -9rem;
-  top: -8rem;
-  width: 27rem;
-}
-
 .reconciliation__icon {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -1159,12 +1148,6 @@ a {
 
   .gallery img {
     height: auto;
-  }
-
-  .reconciliation::after {
-    height: 18rem;
-    right: -11rem;
-    width: 18rem;
   }
 
   .image-source-list li {
