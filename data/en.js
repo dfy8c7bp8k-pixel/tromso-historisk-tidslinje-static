@@ -69,20 +69,12 @@ const timelineEras = [
         ],
         images: [
           {
-            src: "images/image7.jpeg",
+            src: "images/lappekodisillen-forste-side.jpg",
             alt: "Første side av Lappekodisillen fra 1751",
             caption: "Faksimile av Lappekodisillen, første side.",
-            credit: "Faksimile gjengitt i originaldokumentet",
-            sourceLabel: "Store norske leksikon",
-            sourceUrl: "https://snl.no/Lappekodisillen",
-          },
-          {
-            src: "images/image8.jpeg",
-            alt: "Siste side av Lappekodisillen fra 1751 med segl",
-            caption: "Faksimile av Lappekodisillen, side med segl.",
-            credit: "Faksimile gjengitt i originaldokumentet",
-            sourceLabel: "Store norske leksikon",
-            sourceUrl: "https://snl.no/Lappekodisillen",
+            credit: "Nasjonalarkivet, via Digitalarkivet/Wikimedia Commons. Public domain.",
+            sourceLabel: "Wikimedia Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lappekodisillen.pdf",
           },
         ],
         sources: [

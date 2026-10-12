@@ -19,7 +19,7 @@ En statisk, avhengighetsfri versjon av den historiske tidslinjen. Nettstedet bes
 │   ├── no.js           # Autoritativ norsk tekst og alle kildeopplysninger
 │   ├── en.js           # Norsk kildetekst klar for profesjonell oversettelse
 │   └── sme.js          # Norsk kildetekst klar for profesjonell oversettelse
-└── images/             # 24 lokale arkivbilder
+└── images/             # 23 lokale arkivbilder
 ```
 
 ## Se nettstedet lokalt
