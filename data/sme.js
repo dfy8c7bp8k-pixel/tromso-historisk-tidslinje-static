@@ -702,7 +702,7 @@ const timelineEras = [
         sources: [
           {
             label: "Retten til opplæring i og på samisk | udir.no",
-            url: "https://www.udir.no/laring-og-trivsel/samisk-i-skolen/retten-til-opplaring-i-og-pa-samisk/"
+            url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-opplaring-samisk/"
           }
         ],
       },
@@ -896,7 +896,7 @@ const timelineEras = [
         sources: [
           {
             label: "Retten til opplæring i og på samisk – Udir",
-            url: "https://www.udir.no/laring-og-trivsel/samisk-i-skolen/retten-til-opplaring-i-og-pa-samisk/",
+            url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-opplaring-samisk/",
           },
         ],
       },
