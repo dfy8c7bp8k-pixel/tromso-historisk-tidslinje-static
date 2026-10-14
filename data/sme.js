@@ -204,8 +204,8 @@ const timelineEras = [
             url: "https://sametinget.no/naring/reindrift/fakta-om-reindrift/"
           },
           {
-            label: "inngrepsanalyse-reindrift.pdf",
-            url: "https://www.tromsfylke.no/_f/p1/i97434a62-ba6f-481e-bc4a-269936d80b91/inngrepsanalyse-reindrift.pdf"
+            label: "Inngrepskartlegging for reindrifta i Troms fylke – Nasjonalt vitenarkiv",
+            url: "https://hdl.handle.net/11250/2649699"
           },
           {
             label: "Kilden - reindrift",
@@ -683,10 +683,6 @@ const timelineEras = [
             label: "Kilden - reindrift",
             url: "https://kilden.nibio.no/?topic=reindrift&zoom=3.4&x=741601.53&y=7707479.34&bgLayer=graatone&layers=reindrift_reinbeitedistrikt,reindrift_reinbeitedistriktgrenser,reindrift_distriknavn&layers_opacity=0.75,0.75,0.75&layers_visibility=true,true,true"
           },
-          {
-            label: "Kilden – reindrift",
-            url: "https://kilden.nibio.no/?topic=reindrift"
-          }
         ],
       },
       {
