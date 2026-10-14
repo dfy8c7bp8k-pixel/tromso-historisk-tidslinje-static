@@ -66,10 +66,24 @@
   }
 
   function sourceName(image) {
+    if (!image.sourceLabel) return null;
     if (!image.sourceUrl) {
       return element("span", "", image.sourceLabel);
     }
     return externalLink(image.sourceUrl, image.sourceLabel, "arrowUpRight");
+  }
+
+  function appendImageCredit(container, image) {
+    const source = sourceName(image);
+    if (image.credit) container.appendChild(document.createTextNode(image.credit));
+    if (source) {
+      if (image.credit) container.appendChild(document.createTextNode(" · "));
+      container.appendChild(source);
+    }
+  }
+
+  function imageTitle(image) {
+    return image.caption || image.alt || "";
   }
 
   function activeSectionId() {
@@ -149,7 +163,7 @@
     const caption = element("div", "hero__caption");
     caption.appendChild(element("span", "", data.heroImage.caption));
     const credit = element("span");
-    credit.append(document.createTextNode(data.heroImage.credit + " · "), sourceName(data.heroImage));
+    appendImageCredit(credit, data.heroImage);
     caption.appendChild(credit);
     header.appendChild(caption);
     return header;
@@ -217,8 +231,11 @@
     imageOpener = opener;
     enlargedImage.src = assetPath(image.src);
     enlargedImage.alt = image.alt;
-    dialogCaption.textContent = image.caption;
-    dialogCredit.replaceChildren(document.createTextNode(image.credit + " · "), sourceName(image));
+    dialogCaption.textContent = image.caption || "";
+    dialogCaption.hidden = !image.caption;
+    dialogCredit.replaceChildren();
+    appendImageCredit(dialogCredit, image);
+    dialogCredit.hidden = !(image.credit || image.sourceLabel);
     imageFileLink.setAttribute("href", assetPath(image.src));
     imageDialog.showModal();
     closeImage.focus();
@@ -251,8 +268,11 @@
     images.forEach(function (image, imageIndex) {
       const figure = document.createElement("figure");
       const wrap = element("button", "gallery__image-wrap");
+      if (image.src === "images/ullsfjordkoftegutt.png") {
+        wrap.classList.add("gallery__image-wrap--ullsfjordkofte");
+      }
       wrap.type = "button";
-      wrap.setAttribute("aria-label", data.page.openImage + ": " + image.caption);
+      wrap.setAttribute("aria-label", data.page.openImage + ": " + imageTitle(image));
       wrap.setAttribute("aria-haspopup", "dialog");
       wrap.setAttribute("aria-controls", "image-dialog");
       wrap.addEventListener("click", function () {
@@ -270,11 +290,13 @@
       figure.appendChild(wrap);
 
       const caption = document.createElement("figcaption");
-      caption.appendChild(element("span", "", image.caption));
-      const credit = element("span", "gallery__credit");
-      credit.append(document.createTextNode(image.credit + " · "), sourceName(image));
-      caption.appendChild(credit);
-      figure.appendChild(caption);
+      if (image.caption) caption.appendChild(element("span", "", image.caption));
+      if (image.credit || image.sourceLabel) {
+        const credit = element("span", "gallery__credit");
+        appendImageCredit(credit, image);
+        caption.appendChild(credit);
+      }
+      if (caption.childNodes.length) figure.appendChild(caption);
       container.appendChild(figure);
     });
     return container;
@@ -381,10 +403,11 @@
       item.append(
         element("span", "image-source-list__number", String(index + 1).padStart(2, "0")),
         icon("image", 16),
-        element("span", "image-source-list__title", image.caption),
-        element("span", "image-source-list__credit", image.credit),
-        sourceName(image),
+        element("span", "image-source-list__title", imageTitle(image)),
       );
+      if (image.credit) item.appendChild(element("span", "image-source-list__credit", image.credit));
+      const source = sourceName(image);
+      if (source) item.appendChild(source);
       list.appendChild(item);
     });
     section.appendChild(list);

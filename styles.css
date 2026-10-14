@@ -805,6 +805,22 @@ a {
   width: 100%;
 }
 
+.gallery .gallery__image-wrap--ullsfjordkofte {
+  background: transparent;
+  margin-inline: auto;
+  max-height: none;
+  max-width: 100%;
+  min-height: 0;
+  width: fit-content;
+}
+
+.gallery .gallery__image-wrap--ullsfjordkofte img {
+  height: auto;
+  max-height: min(30rem, 65vh);
+  max-width: 100%;
+  width: auto;
+}
+
 .gallery__index {
   background: rgba(6, 25, 35, 0.84);
   bottom: 0;
@@ -1220,6 +1236,10 @@ a {
 
   .gallery img {
     height: auto;
+  }
+
+  .gallery .gallery__image-wrap--ullsfjordkofte img {
+    max-height: min(24rem, 60vh);
   }
 
   .image-source-list li {

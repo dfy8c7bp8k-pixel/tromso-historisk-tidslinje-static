@@ -759,6 +759,16 @@ const timelineEras = [
           "I dag er dette en viktig del av forsoningsarbeidet. Utdanning og kunnskap gjør det mulig å forstå historien, inkludert fornorskingen og konsekvensene den har hatt. Samtidig gir universitetet rom for samiske og kvenske perspektiver i forskning, undervisning og samfunnsdebatt.",
           "Forsoning handler ikke bare om å se tilbake, men også om å bygge et samfunn der flere stemmer blir hørt. Universitetet i Tromsø spiller en viktig rolle i dette arbeidet, ved å utdanne nye generasjoner med kunnskap om historie, språk og kultur i nord."
         ],
+        images: [
+          {
+            src: "images/University_of_Tromso_Breivika_campus.jpeg",
+            alt: "Bygninger rundt et grønt uteområde med gangveier og trær.",
+            caption: "Universitetet i Tromsø, campus i Breivika.",
+            credit: "Edricson, via Wikimedia Commons",
+            sourceLabel: "CC BY-SA 3.0",
+            sourceUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+          },
+        ],
         sources: [
           {
             label: "UiT Norges arktiske universitet | UiT",
@@ -911,6 +921,14 @@ const timelineEras = [
           "I tillegg finnes det mange samiske og kvenske foreninger, lag og institusjoner i Tromsø. Disse arbeider med språk, kultur, kunst, ungdomsarbeid og møteplasser for ulike generasjoner. Eksempler er språksentre, kulturorganisasjoner og interessegrupper som bidrar til å holde språk og tradisjoner levende.",
           "Denne utviklingen er viktig i forsoningsarbeidet. Når samisk og kvensk språk og kultur får være synlig og en naturlig del av bylivet, bidrar det til økt kunnskap, respekt og likeverd."
         ],
+        images: [
+          {
+            src: "images/ullsfjordkoftegutt.png",
+            alt: "Barn i blå kofte med røde og hvite detaljer står ved vannet.",
+            caption: "Gutt i Ullsfjordkofte.",
+            credit: "Learnlab",
+          },
+        ],
         sources: []
       },
       {
@@ -949,6 +967,14 @@ const timelineEras = [
           "Forsoning handler også om hvordan man ser framover. Tromsø har lange tradisjoner som møteplass mellom ulike folk og kulturer. I dag kan dette mangfoldet forstås som en ressurs, der flere historier og identiteter får plass side om side.",
           "I dag finnes det mange arenaer i Tromsø som bidrar til å styrke samisk og kvensk språk og kultur. Dette gjelder blant annet skoler, språksentre, universitetet, kulturinstitusjoner, foreninger og ulike møteplasser. Her arbeides det med språk, kunst, historieformidling og identitet. Slike arenaer er viktige i forsoningsarbeidet, fordi de skaper synlighet, kunnskap og fellesskap. Gjennom dette arbeidet utvikles Tromsø videre som en by der ulike historier og perspektiver får plass side om side.",
           "Forsoning i Tromsø kan dermed forstås som en pågående prosess – forankret i sannhet, utviklet gjennom kunnskap, og levd i fellesskapet."
+        ],
+        images: [
+          {
+            src: "images/forsoning.png",
+            alt: "Snødekt havneområde med båter, bro og en opplyst bygning foran en fjellside.",
+            caption: "",
+            credit: "Adobe Stock · Filnr. 318703415",
+          },
         ],
         sources: [
           // Uavklart: «Rapport-2026-2-Undersokelse-om-samehets-og-holdninger-til-samer-og-kvener-norskfinner.pdf» har bare en lokal filadresse i Word.
