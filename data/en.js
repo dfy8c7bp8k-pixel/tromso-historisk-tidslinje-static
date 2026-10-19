@@ -89,6 +89,10 @@ const timelineEras = [
             label: "Lappekodisillen – Store norske leksikon",
             url: "https://snl.no/Lappekodisillen",
           },
+          {
+            label: "Lappekodisillen – Norgeshistorie",
+            url: "https://www.norgeshistorie.no/kilder/enevelde/K1221-lappekodisillen.html",
+          },
         ],
       },
     ],
@@ -485,7 +489,7 @@ const timelineEras = [
         date: "1852–1950",
         title: "Fornorsking og assimilering",
         lead:
-          "Fornorskingen tok til mot slutten av 1800-tallet. Nasjonalismen var en viktig drivkraft i denne perioden. Det var en utbredt tanke at alle i landet skulle snakke samme språk og ha samme kultur.",
+          "Fornorskingen tok til fra midten av 1800-tallet. Nasjonalismen var en viktig drivkraft i denne perioden. Det var en utbredt tanke at alle i landet skulle snakke samme språk og ha samme kultur.",
         paragraphs: [
           "Tidligere hadde undervisning og opplæring mange steder foregått på samisk, helt siden 1600-tallet. Prester og lærere brukte samisk språk både i skole og kirke gjennom 1700-tallet og tidlig på 1800-tallet. Utover 1800-tallet endret dette seg. Staten ønsket sterkere kontroll, og samisk språk og kultur ble i økende grad sett ned på.",
           "Fornorskingen ble etter hvert mer systematisk. Fra siste del av 1800-tallet og særlig etter 1900 ble det innført tiltak for å gjøre samer og kvener mer «norske». Samisk språk ble fjernet fra skolen, og det ble ikke lenger tillatt å bruke samisk i undervisning eller i gudstjenester. Også i det offentlige, som hos lensmenn og i kommuner, skulle norsk være eneste språk.",
