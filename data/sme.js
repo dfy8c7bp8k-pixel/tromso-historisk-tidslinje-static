@@ -497,7 +497,11 @@ const timelineEras = [
           "Samisk språk forsvant fra store områder. For eksempel forsvant kaldfjordsamisk, dialekten som ble snakket på Kvaløya og Ringvassøya i Troms, allerede på 1920-tallet.",
           "Fornorskingspolitikken førte ikke bare til tap av språk, men påvirket også identitet, oppvekst og livsvilkår for mange samer og kvener. Mange mistet muligheten til å bruke eget språk, og flere opplevde skam knyttet til egen bakgrunn. Dette har også hatt betydning for helse, tilhørighet og tillit til myndighetene. Konsekvensene av fornorskingen strekker seg derfor over flere generasjoner, og er fortsatt en del av bakgrunnen for arbeidet med forsoning i dag.",
           "Kilde: Samenes historie (Andersen, Evjen og Ryymin)",
-          "Learnlab: Livet på gården i Lakselvbukt"
+          {
+            type: "document",
+            label: "Åpne Livet på gården i Lakselvbukt (PDF)",
+            src: "documents/livet-pa-garden-i-lakselvbukt.pdf",
+          }
         ],
         images: [
           {
@@ -597,7 +601,11 @@ const timelineEras = [
           "Noen familier ble værende på norsk side, men måtte da gå over til helårs reindrift. I 1925 ble det innført sanksjoner mot dem som ikke hadde flyttet, og noen måtte betale bøter og slakte rein for å klare det.",
           "Den siste gangen reindriftssamer fra Tromsdalen og Karesuando-området brukte sommerbeitene i Tromsdalen, var i 1939.",
           "Denne historien er viktig i arbeidet med forsoning i dag. Den viser hvordan statlige beslutninger førte til tap av leveområder, tvangsflytting og brudd i tradisjonelle livsformer. Forsoning handler derfor også om å gjøre denne historien kjent, forstå konsekvensene den fikk for mennesker og lokalsamfunn, og anerkjenne at slike inngrep fortsatt påvirker samiske liv og rettigheter i dag.",
-          "Tromsdalen siida – Learnlab"
+          {
+            type: "document",
+            label: "Åpne Tromsdalen siida (PDF)",
+            src: "documents/tromsdalen-siida.pdf",
+          }
         ],
         sources: [
           {

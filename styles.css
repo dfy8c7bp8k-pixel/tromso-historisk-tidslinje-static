@@ -759,7 +759,8 @@ a {
   margin: 0;
 }
 
-.image-dialog__close {
+.image-dialog__close,
+.document-link {
   background: var(--ink);
   border: 0;
   color: var(--white);
@@ -890,6 +891,21 @@ a {
 
 .event-details__body p {
   margin: 0 0 1rem;
+}
+
+.document-link {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.document-link:hover {
+  text-decoration: underline;
+}
+
+.document-link:focus-visible {
+  outline-color: var(--ink);
 }
 
 .source-links {

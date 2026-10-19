@@ -314,7 +314,16 @@
 
     const body = element("div", "event-details__body");
     event.paragraphs.forEach(function (paragraph) {
-      body.appendChild(element("p", "", paragraph));
+      const block = element("p");
+      if (paragraph.type === "document") {
+        const link = externalLink(assetPath(paragraph.src), paragraph.label);
+        link.className = "document-link";
+        link.setAttribute("aria-label", paragraph.label + " – åpnes i ny fane");
+        block.appendChild(link);
+      } else {
+        block.textContent = paragraph;
+      }
+      body.appendChild(block);
     });
     const links = element("div", "source-links");
     event.sources.forEach(function (source) {
