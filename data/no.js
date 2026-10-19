@@ -62,7 +62,9 @@ const timelineEras = [
           "Noen reindriftssamer hadde vinterbeite på Finnmarksvidda eller i områder i Sverige, og sommerbeite langs kysten, blant annet i områdene rundt Tromsø. For å kunne flytte med reinflokkene mellom disse områdene, var de avhengige av å krysse landegrenser.",
         paragraphs: [
           "I 1751 ble grensen mellom Danmark-Norge og Sverige fastsatt. Samtidig ble det inngått et tillegg til grensetraktaten, kalt Lappekodisillen. Denne avtalen skulle sikre at samene fortsatt kunne krysse grensen med reinflokkene sine, slik de hadde gjort i lang tid.",
-          "Lappekodisillen er derfor en viktig avtale, fordi den anerkjente samisk bruk av land og retten til å flytte med rein over landegrensene."
+          "Lappekodisillen er derfor en viktig avtale, fordi den anerkjente samisk bruk av land og retten til å flytte med rein over landegrensene.",
+          // Inger Lise har oppgitt bokhenvisningen. Fullstendig bibliografisk referanse og eventuelle sidetall avventes.
+          "Kilde: Samenes historie fra 1751–2010 (Andersen, Evjen og Ryymin, 2021)."
         ],
         images: [
           {
@@ -75,7 +77,6 @@ const timelineEras = [
           },
         ],
         sources: [
-          // Uavklart: «Lappekodisillen - Samiske veivisere» har bare en lokal filadresse i Word.
           {
             label: "Lappekodisillen – Store norske leksikon",
             url: "https://snl.no/Lappekodisillen",
