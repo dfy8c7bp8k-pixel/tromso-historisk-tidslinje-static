@@ -1016,7 +1016,7 @@ const page = {
   eyebrow: "En historisk tidslinje",
   heroTitle: ["Mange folk.", "Én felles historie."],
   heroLead:
-    "Historisk tidslinje – utvikling av Tromsø/ Romsa i et samisk perspektiv",
+    "Samer i Tromsø i et historisk perspektiv",
   explore: "Utforsk tidslinjen",
   jumpLabel: "Hopp til",
   north: "69° nord",
