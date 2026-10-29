@@ -997,6 +997,16 @@ a {
   margin: 0;
 }
 
+.literature-list {
+  margin: 0 auto;
+  max-width: 82rem;
+  padding-left: 1.4rem;
+}
+
+.literature-list li + li {
+  margin-top: 0.75rem;
+}
+
 .image-source-list {
   border-top: 1px solid rgba(16, 39, 51, 0.28);
   list-style: none;

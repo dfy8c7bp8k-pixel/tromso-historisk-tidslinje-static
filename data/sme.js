@@ -74,8 +74,8 @@ const timelineEras = [
         paragraphs: [
           "I 1751 ble grensen mellom Danmark-Norge og Sverige fastsatt. Samtidig ble det inngått et tillegg til grensetraktaten, kalt Lappekodisillen. Denne avtalen skulle sikre at samene fortsatt kunne krysse grensen med reinflokkene sine, slik de hadde gjort i lang tid.",
           "Lappekodisillen er derfor en viktig avtale, fordi den anerkjente samisk bruk av land og retten til å flytte med rein over landegrensene.",
-          // Inger Lise har oppgitt bokhenvisningen. Fullstendig bibliografisk referanse og eventuelle sidetall avventes.
-          "Kilde: Samenes historie fra 1751–2010 (Andersen, Evjen og Ryymin, 2021)."
+          // Inger Lise har oppgitt bokhenvisningen og sidetallene 78–79.
+          "Kilde: Samenes historie fra 1751–2010 (Andersen, Evjen og Ryymin, 2021), s. 78–79."
         ],
         images: [
           {
@@ -339,8 +339,11 @@ const timelineEras = [
         lead:
           "I 1834 ble Tromsø bispesete for Nord-Norge. Tromsø domkirke ble da hovedkirke for bispedømmet. Ved en utvidelse av bygrensene i 1860 ble kirken innlemmet i byen.",
         paragraphs: [
-          "Tromsø hadde denne rollen fram til 1952. Da ble Nord-Hålogaland bispedømme opprettet. Dette bispedømmet omfatter menighetene i Troms og Finnmark, samt Svalbard, som hører til Tromsø domprosti. Tromsø domkirke er fortsatt bispesete.",
-          "Dette styrket Tromsø som religiøst og administrativt sentrum i nord, samtidig som det fikk betydning for samene ved at kirken ble et viktig redskap i fornorskingspolitikken, blant annet gjennom språk og opplæring."
+          "Hålogaland bispedømme (først Tromsø stift) var et av Den norske kirkes bispedømmer fra 1804 til 1952. Det ble utskilt fra Nidaros bispedømme med fylkene Nordland, Troms og Finnmark som territorium. ",
+          "I 1952 ble det så delt i Sør-Hålogaland bispedømme (Nordland) og Nord-Hålogaland bispedømme (Troms og Finnmark). ",
+          "Hovedkirken i domprostiet er Tromsø domkirke, bygd i 1861, den eneste norske domkirken bygd i tre.  Kirken er en nygotisk, laftet langkirke med vesttårn og polygonalt avsluttet kor.",
+          "Den eldste kirken er Elverhøy kirke fra 1803. Den yngste kirken er Kroken kirke fra 2006. I denne kirken ligger også Tromsø døvekirke.",
+          "Den mest kjente kirken i Tromsø er Tromsdalen kirke eller Ishavskatedralen."
         ],
         images: [
           {
@@ -354,6 +357,14 @@ const timelineEras = [
           },
         ],
         sources: [
+          {
+            label: "Bispedømmene – Den norske kirke",
+            url: "https://www.kirken.no/nb-NO/om-kirken/slik-styres-kirken/bispedommerad/bispedommene/",
+          },
+          {
+            label: "Tromsø – Store norske leksikon",
+            url: "https://snl.no/Troms%C3%B8/",
+          },
           {
             label: "Nord-Hålogaland bispedømme – Wikipedia",
             url: "https://no.wikipedia.org/wiki/Nord-H%C3%A5logaland_bisped%C3%B8mme"
@@ -495,8 +506,10 @@ const timelineEras = [
           "Fornorskingen tok til fra midten av 1800-tallet. Nasjonalismen var en viktig drivkraft i denne perioden. Det var en utbredt tanke at alle i landet skulle snakke samme språk og ha samme kultur.",
         paragraphs: [
           "Tidligere hadde undervisning og opplæring mange steder foregått på samisk, helt siden 1600-tallet. Prester og lærere brukte samisk språk både i skole og kirke gjennom 1700-tallet og tidlig på 1800-tallet. Utover 1800-tallet endret dette seg. Staten ønsket sterkere kontroll, og samisk språk og kultur ble i økende grad sett ned på.",
-          "Fornorskingen ble etter hvert mer systematisk. Fra siste del av 1800-tallet og særlig etter 1900 ble det innført tiltak for å gjøre samer og kvener mer «norske». Samisk språk ble fjernet fra skolen, og det ble ikke lenger tillatt å bruke samisk i undervisning eller i gudstjenester. Også i det offentlige, som hos lensmenn og i kommuner, skulle norsk være eneste språk.",
+          "Fornorskingen ble etter hvert mer systematisk. Fra midten av 1800- tallet og særlig etter 1900 ble det innført tiltak for å gjøre samer og kvener mer «norske». Samisk språk ble fjernet fra skolen, og det ble ikke lenger tillatt å bruke samisk i undervisning eller i gudstjenester. Også i det offentlige, som hos lensmenn og i kommuner, skulle norsk være eneste språk.",
           "Et viktig virkemiddel var Finnefondet, som eksisterte fra 1852 til 1921. Fondet skulle støtte arbeidet med å fornorske samer og kvener, blant annet gjennom skolen.",
+          "«Iden hensigt at bibringe Lapperne kyndighet i det norske sprog».",
+          "Hentet fra “Samenes historie fra 1751 – 2010” (Andersen, Evjen og Ryymin 2021) s 169",
           "Mange barn som bodde langt fra skolen, ble sendt til internatskoler. Der bodde de store deler av året. På internatene var det bare lov å snakke norsk. For mange førte dette til at de mistet språket sitt og fikk svekket tilknytning til egen kultur.",
           "Etter hvert fikk fornorskingen konsekvenser, og mange samer sluttet å overføre språket sitt til barna. Et eksempel er folketellingen i 1930, der over halvparten av innbyggerne i Kvænangen oppga samisk eller finsk som hjemmespråk. I 1950 var det bare én person som oppga at de snakket samisk, og én som oppga finsk.",
           "Samisk språk forsvant fra store områder. For eksempel forsvant kaldfjordsamisk, dialekten som ble snakket på Kvaløya og Ringvassøya i Troms, allerede på 1920-tallet.",
@@ -520,6 +533,10 @@ const timelineEras = [
           },
         ],
         sources: [
+          {
+            label: "Stortingets gjennomgang",
+            url: "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-030s/?m=0",
+          },
           {
             label: "Samisk språk og språkhistorie - Samiske veivisere",
             url: "https://samiskeveivisere.no/article/samisk-sprak-og-sprakhistorie/#Utrydding-av-samisk"
@@ -906,7 +923,9 @@ const timelineEras = [
           "Tromsø har gjennom sin utvikling blitt et viktig sentrum i Nord-Norge, og omtales ofte som landsdelens «hovedstad». Byen har hatt sterk befolkningsvekst og tiltrekker seg mennesker fra hele regionen.",
         paragraphs: [
           "Tromsø er også en av byene i Norge med en stor samisk befolkning. I dag bor mange samer i by, og begrepet «bysame» brukes om dette. Urbaniseringen har endret forståelsen av hva det vil si å være same, og samiske språk og kultur er i dag synlige også i bymiljøet.",
-          // Inger Lise oppgir Prestvannet skole i Tromsø som kilde til elevtallet. Skoleår og om tallet omfatter både første- og andrespråkselever, avventes.
+          // Inger Lise oppgir Prestvannet skole som kilde til elevtallet, som er muntlig overlevert.
+          // Ifølge henne gjelder tallet alle samiske elever uansett språknivå.
+          // Skoleåret er ukjent, og skriftlig dokumentasjon gjenstår.
           "I Tromsø er det rundt 330 elever i grunnskolen som får opplæring i samisk. Den første samiske klassen ble etablert i 2003, og tilbudet har vokst jevnt siden. I dag finnes det egne samiskklasser ved Prestvannet skole (1.–7. trinn) og Grønnåsen skole (8.–10. trinn). I tillegg får flere elever samiskopplæring ved andre skoler i byen.",
           "Det er positivt at stadig flere velger samisk språk i skolen. Dette bidrar til å styrke språket, identiteten og kunnskapen om samisk kultur hos nye generasjoner.",
           "Det tilbys også opplæring i kvensk språk, noe som er viktig for å bevare og utvikle kvensk språk og kultur i regionen. Kvenene har vært en viktig del av bosetting, arbeid og kulturliv i Tromsø og regionen rundt. De slo seg særlig ned i fjord- og dalområdene, og bidro til utviklingen av jordbruk, fiske og handel. I dag er kvener anerkjent som en nasjonal minoritet i Norge. Likevel er kunnskapen om kvensk språk og kultur ofte mindre enn kunnskapen om samisk. For å få en mer helhetlig forståelse av Tromsøs historie, er det derfor viktig å synliggjøre også den kvenske tilstedeværelsen og erfaringene.",
@@ -1027,7 +1046,7 @@ const page = {
   translationNotice:
     "Profesjonell nordsamisk oversettelse er ikke satt inn ennå. Siden viser foreløpig den norske kildeteksten.",
   eyebrow: "En historisk tidslinje",
-  heroTitle: ["Mange folk.", "Én felles historie."],
+  heroTitle: ["Mange folk.", "En felles historie."],
   heroLead:
     "Samer i Tromsø i et historisk perspektiv",
   explore: "Utforsk tidslinjen",
@@ -1047,11 +1066,26 @@ const page = {
     "Levd i fellesskapet.",
   ],
   documentation: "Dokumentasjon",
+  literatureTitle: "Litteratur og kilder",
+  literatureSources: [
+    "Bjørklund, Ivar (1986) Hvordan nordmenn  ble flere og samene færre” Reidar Eike – Asle Høgmo (1994) Identitet og livsutfoldelse – artikklesamling .",
+    "Andersen, Evjen og Ryymin (2021) “Samenes historie fra 1751 – 2010",
+    "Tromsø Museum – samlinger",
+    "Sametinget – kulturminner og bygningsvern",
+    "Perspektiv Museum",
+    "Museum I nord",
+    "Samiske veivisere",
+    "Universitetet I Tromsø – Reaidu",
+    "Tromsø kommunes kommunedelplan 2023 – 2032",
+    "Nordligefolk .no",
+    "Lokalhistoriewiki.no",
+    "Store norske leksikon",
+    "Riksantikvaren",
+    "Samtaler med ulike representanter fra den samiske befolkningen.",
+  ],
   imageSourcesIntro:
     "Kilden står også direkte under hvert bilde. Der originaldokumentet ikke inneholder en nettadresse, er arkivnavnet fra bildeteksten gjengitt. Bildene publiseres på grunnlag av oppgitte delingsrettigheter.",
   timelineName: "Historisk tidslinje",
-  footerText:
-    "Historisk innhold fra dokumentet «Historisk tidslinje revidert 1» og de oppførte kildene.",
   toTop: "Til toppen",
 };
 

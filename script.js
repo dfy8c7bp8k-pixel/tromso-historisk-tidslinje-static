@@ -88,7 +88,7 @@
 
   function activeSectionId() {
     const sections = Array.from(
-      document.querySelectorAll("#introduksjon, .era[id], .timeline-event[id], #bildekilder"),
+      document.querySelectorAll("#introduksjon, .era[id], .timeline-event[id], #litteratur-og-kilder, #bildekilder"),
     );
     let current = "introduksjon";
     sections.forEach(function (section) {
@@ -394,6 +394,24 @@
     return section;
   }
 
+  function literatureSources() {
+    const section = element("section", "image-sources");
+    section.id = "litteratur-og-kilder";
+    section.setAttribute("aria-labelledby", "literature-title");
+    const header = element("header", "image-sources__header");
+    const titleGroup = element("div");
+    const title = element("h2", "", data.page.literatureTitle);
+    title.id = "literature-title";
+    titleGroup.append(element("p", "eyebrow eyebrow--dark", data.page.documentation), title);
+    header.appendChild(titleGroup);
+    const list = element("ul", "literature-list");
+    data.page.literatureSources.forEach(function (source) {
+      list.appendChild(element("li", "", source));
+    });
+    section.append(header, list);
+    return section;
+  }
+
   function imageSources() {
     const section = element("section", "image-sources");
     section.id = "bildekilder";
@@ -430,7 +448,7 @@
     const top = element("a", "", data.page.toTop + " ");
     top.href = "#top";
     top.appendChild(icon("arrowUp", 15));
-    footer.append(name, element("p", "", data.page.footerText), top);
+    footer.append(name, top);
     return footer;
   }
 
@@ -446,6 +464,7 @@
     introduction(eventCount),
     timeline(),
     reconciliation(),
+    literatureSources(),
     imageSources(),
     footer(),
   );
