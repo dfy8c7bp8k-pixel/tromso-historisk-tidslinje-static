@@ -700,6 +700,10 @@ a {
   grid-column: 1 / -1;
 }
 
+.gallery--municipal-maps figure:last-child {
+  grid-column: 1 / -1;
+}
+
 .gallery figure {
   margin: 0;
   min-width: 0;
@@ -804,6 +808,17 @@ a {
   max-height: 31rem;
   object-fit: contain;
   width: 100%;
+}
+
+.gallery .gallery__image-wrap--full {
+  aspect-ratio: auto;
+  max-height: none;
+  min-height: 0;
+}
+
+.gallery .gallery__image-wrap--full img {
+  height: auto;
+  object-fit: contain;
 }
 
 .gallery .gallery__image-wrap--ullsfjordkofte {
@@ -924,45 +939,6 @@ a {
   font-weight: 650;
   gap: 0.35rem;
   line-height: 1.45;
-}
-
-.reconciliation {
-  background:
-    radial-gradient(circle at 77% 13%, rgba(95, 145, 159, 0.22), transparent 32rem),
-    var(--night);
-  color: var(--white);
-  padding: clamp(6rem, 12vw, 12rem) clamp(1.4rem, 9vw, 9rem);
-  position: relative;
-}
-
-.reconciliation__icon {
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 50%;
-  display: flex;
-  height: 4.2rem;
-  justify-content: center;
-  margin-bottom: 2.2rem;
-  width: 4.2rem;
-}
-
-.reconciliation > p {
-  font-size: 0.76rem;
-  font-weight: 750;
-  letter-spacing: 0.16em;
-  margin: 0 0 1rem;
-  text-transform: uppercase;
-}
-
-.reconciliation h2 {
-  color: #d7e9ed;
-  font-family: var(--display);
-  font-size: clamp(2.8rem, 6.8vw, 7.2rem);
-  font-weight: 400;
-  letter-spacing: -0.05em;
-  line-height: 0.98;
-  margin: 0;
-  max-width: 14ch;
 }
 
 .image-sources {
@@ -1312,8 +1288,7 @@ a {
   }
 
   .timeline-shell,
-  .image-sources,
-  .reconciliation {
+  .image-sources {
     background: #fff;
     color: #000;
   }

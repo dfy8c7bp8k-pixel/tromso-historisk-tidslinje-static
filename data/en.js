@@ -335,7 +335,7 @@ const timelineEras = [
         date: "1834",
         title: "Tromsø blir bispesete",
         lead:
-          "I 1834 ble Tromsø bispesete for Nord-Norge. Tromsø domkirke ble da hovedkirke for bispedømmet. Ved en utvidelse av bygrensene i 1860 ble kirken innlemmet i byen.",
+          "I 1834 ble Tromsø bispesete for Nord-Norge. Tromsø domkirke ble da hovedkirke for bispedømmet. Ved en utvidelse av bygrensene ble kirken innlemmet i byen.",
         paragraphs: [
           "Hålogaland bispedømme (først Tromsø stift) var et av Den norske kirkes bispedømmer fra 1804 til 1952. Det ble utskilt fra Nidaros bispedømme med fylkene Nordland, Troms og Finnmark som territorium. ",
           "I 1952 ble det så delt i Sør-Hålogaland bispedømme (Nordland) og Nord-Hålogaland bispedømme (Troms og Finnmark). ",
@@ -504,7 +504,7 @@ const timelineEras = [
           "Fornorskingen tok til fra midten av 1800-tallet. Nasjonalismen var en viktig drivkraft i denne perioden. Det var en utbredt tanke at alle i landet skulle snakke samme språk og ha samme kultur.",
         paragraphs: [
           "Tidligere hadde undervisning og opplæring mange steder foregått på samisk, helt siden 1600-tallet. Prester og lærere brukte samisk språk både i skole og kirke gjennom 1700-tallet og tidlig på 1800-tallet. Utover 1800-tallet endret dette seg. Staten ønsket sterkere kontroll, og samisk språk og kultur ble i økende grad sett ned på.",
-          "Fornorskingen ble etter hvert mer systematisk. Fra midten av 1800- tallet og særlig etter 1900 ble det innført tiltak for å gjøre samer og kvener mer «norske». Samisk språk ble fjernet fra skolen, og det ble ikke lenger tillatt å bruke samisk i undervisning eller i gudstjenester. Også i det offentlige, som hos lensmenn og i kommuner, skulle norsk være eneste språk.",
+          "Fornorskingen ble etter hvert mer systematisk. Fra midten av 1800-tallet og særlig etter 1900 ble det innført tiltak for å gjøre samer og kvener mer «norske». Samisk språk ble fjernet fra skolen, og det ble ikke lenger tillatt å bruke samisk i undervisning eller i gudstjenester. Også i det offentlige, som hos lensmenn og i kommuner, skulle norsk være eneste språk.",
           "Et viktig virkemiddel var Finnefondet, som eksisterte fra 1852 til 1921. Fondet skulle støtte arbeidet med å fornorske samer og kvener, blant annet gjennom skolen.",
           "«Iden hensigt at bibringe Lapperne kyndighet i det norske sprog».",
           "Hentet fra “Samenes historie fra 1751 – 2010” (Andersen, Evjen og Ryymin 2021) s 169",
@@ -723,6 +723,24 @@ const timelineEras = [
           "I 1969 ble det opprettet et gymnas med samisk undervisning i Karasjok. I 1985 ble det mulig å ha samisk som hovedspråk i hele grunnskolen.",
           "I 1974 ble Nordisk Samisk Institutt etablert i Kautokeino. Universitetet i Tromsø har siden starten hatt fagmiljøer innen samisk språk og kultur. I Tromsø finnes også Gáisi språksenter, som arbeider med å styrke samisk språk."
         ],
+        images: [
+          {
+            src: "images/gaisi-arrangement.webp",
+            alt: "Et stort publikum står foran en scene i en glasshall opplyst med blått og rødt lys.",
+            caption: "Publikum på Romssa Duodji & Fashion Show, 29. oktober 2022.",
+            credit: "Foto: David Jensen / @jensenmedia, via Gáisi språksenter.",
+            sourceLabel: "Gáisi språksenter",
+            sourceUrl: "https://www.gaisi.org/govvat/project-one-f5w4d-y8kte",
+          },
+          {
+            src: "images/gaisi-duodjimarked.webp",
+            alt: "Brune skinnvesker og punger med fargerik dekor ligger utstilt på et bord.",
+            caption: "Duodji på markedet 28.–29. oktober 2022.",
+            credit: "Foto: David Jensen / @jensenmedia, via Gáisi språksenter.",
+            sourceLabel: "Gáisi språksenter",
+            sourceUrl: "https://www.gaisi.org/govvat/project-two-ky966-kp37m",
+          },
+        ],
         sources: [
           {
             label: "Retten til opplæring i og på samisk | udir.no",
@@ -767,6 +785,16 @@ const timelineEras = [
             caption: "Kommunegrensen 1964–2008, med senere fradelt område markert i rødt.",
             credit: "Kilde: Byarkivet i Tromsø",
             sourceLabel: "Byarkivet i Tromsø",
+          },
+          {
+            src: "images/tromso-kommunekart.svg",
+            alt: "Oversiktskart over kommunene i Troms, med Tromsø markert i rødt og de øvrige kommunene i grått.",
+            caption: "Dagens Tromsø kommune markert i rødt på et oversiktskart over Troms.",
+            credit: "Kart: Jay1279, CC0 1.0, via Wikimedia Commons.",
+            sourceLabel: "Wikimedia Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:NO_5501_Troms%C3%B8.svg",
+            licenseLabel: "CC0 1.0",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
           },
         ],
         sources: [
@@ -888,6 +916,18 @@ const timelineEras = [
         paragraphs: [
           "Nasjonaldagen ble markert for første gang i 1993 og blir feiret i Tromsø hvert år. Samme år ble FNs internasjonale urbefolkningsår åpnet i Karasjok."
         ],
+        images: [
+          {
+            src: "images/samenes-nasjonaldag-tromso-2011.jpg",
+            alt: "Reinkappkjørere på ski trekkes av reinsdyr gjennom en snødekt gate, med publikum bak sperringer.",
+            caption: "Reinkappkjøring under feiringen av samenes nasjonaldag i Tromsø 6. februar 2011.",
+            credit: "Foto: anjči, CC BY 2.0, via Wikimedia Commons.",
+            sourceLabel: "Wikimedia Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Reindeer_race,_Troms%C3%B8_Norway.jpg",
+            licenseLabel: "CC BY 2.0",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+          },
+        ],
         sources: [
           {
             label: "Nasjonaldag og nasjonale symboler - Sametinget",
@@ -921,19 +961,40 @@ const timelineEras = [
           "Tromsø har gjennom sin utvikling blitt et viktig sentrum i Nord-Norge, og omtales ofte som landsdelens «hovedstad». Byen har hatt sterk befolkningsvekst og tiltrekker seg mennesker fra hele regionen.",
         paragraphs: [
           "Tromsø er også en av byene i Norge med en stor samisk befolkning. I dag bor mange samer i by, og begrepet «bysame» brukes om dette. Urbaniseringen har endret forståelsen av hva det vil si å være same, og samiske språk og kultur er i dag synlige også i bymiljøet.",
-          // Inger Lise oppgir Prestvannet skole som kilde til elevtallet, som er muntlig overlevert.
-          // Ifølge henne gjelder tallet alle samiske elever uansett språknivå.
-          // Skoleåret er ukjent, og skriftlig dokumentasjon gjenstår.
-          "I Tromsø er det rundt 330 elever i grunnskolen som får opplæring i samisk. Den første samiske klassen ble etablert i 2003, og tilbudet har vokst jevnt siden. I dag finnes det egne samiskklasser ved Prestvannet skole (1.–7. trinn) og Grønnåsen skole (8.–10. trinn). I tillegg får flere elever samiskopplæring ved andre skoler i byen.",
+          "I skoleåret 2022–2023 fikk 304 elever i Tromsø kommune opplæring i samisk, ifølge Statsforvalteren i Troms og Finnmark. Den første samiske klassen ble etablert i 2003. Prestvannet skole hadde en aldersblandet samisk klasse allerede fra 2001. Fra skoleåret 2026–2027 ble samisktilbudet ved Prestvannet flyttet til Workinnmarka skole. Det finnes også et samisk opplæringstilbud på ungdomstrinnet ved Grønnåsen skole. I tillegg får elever samiskopplæring ved andre skoler i byen.",
           "Det er positivt at stadig flere velger samisk språk i skolen. Dette bidrar til å styrke språket, identiteten og kunnskapen om samisk kultur hos nye generasjoner.",
           "Det tilbys også opplæring i kvensk språk, noe som er viktig for å bevare og utvikle kvensk språk og kultur i regionen. Kvenene har vært en viktig del av bosetting, arbeid og kulturliv i Tromsø og regionen rundt. De slo seg særlig ned i fjord- og dalområdene, og bidro til utviklingen av jordbruk, fiske og handel. I dag er kvener anerkjent som en nasjonal minoritet i Norge. Likevel er kunnskapen om kvensk språk og kultur ofte mindre enn kunnskapen om samisk. For å få en mer helhetlig forståelse av Tromsøs historie, er det derfor viktig å synliggjøre også den kvenske tilstedeværelsen og erfaringene.",
           "I dag er rettighetene til både samer og kvener forankret i Grunnloven, sameloven og i internasjonale avtaler, blant annet gjennom FN. Dette gir et viktig grunnlag for videre utvikling av språk, kultur og deltakelse i samfunnet.",
           "På mange områder går Tromsø foran i denne utviklingen, og viser hvordan styrking av samisk og kvensk språk og kultur er en viktig del av det konkrete forsoningsarbeidet i dag."
         ],
+        images: [
+          {
+            src: "images/storgata-tromso-2016.jpg",
+            alt: "Snødekte trehus langs Storgata i Tromsø, med Perspektivet Museum i forgrunnen og mennesker langs gaten.",
+            caption: "Storgata i Tromsø, mars 2016.",
+            credit: "Foto: Joehawkins, CC BY-SA 4.0, via Wikimedia Commons.",
+            sourceLabel: "Wikimedia Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Storgata_Troms%C3%B8_(1).jpg",
+            licenseLabel: "CC BY-SA 4.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+          },
+        ],
         sources: [
           {
             label: "Retten til opplæring i og på samisk – Udir",
             url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-opplaring-samisk/",
+          },
+          {
+            label: "Samiskopplæring i Tromsø 2022–2023 – Statsforvalteren i Troms og Finnmark, s. 1",
+            url: "https://www.regjeringen.no/contentassets/dd1f4b6c2be84d3591eeecb19a664ad2/statsforvalteren-i-troms-og-finnmark.pdf",
+          },
+          {
+            label: "Prestvannet skole – historikk",
+            url: "https://prestvannet.tromsoskolen.no/index.php?pageID=81",
+          },
+          {
+            label: "Prestvannet skole – Tromsø kommune",
+            url: "https://www.tromso.kommune.no/barnehage-og-skole/barneskoler/prestvannet-skole-bahpajavrri-skuvla",
           },
         ],
       },
@@ -974,6 +1035,16 @@ const timelineEras = [
           "Målet er å legge grunnlag for forsoning og et mer inkluderende samfunn. Ved å dokumentere både urett og erfaringer gir rapporten et felles utgangspunkt for dialog, ansvar og konkrete tiltak videre.",
           "Kommisjonen avga sin rapport til Stortinget 1. juni 2023."
         ],
+        images: [
+          {
+            src: "images/sannhetskommisjonen-rapportforside.png",
+            alt: "Rapportforside med tittelen «Sannhet og forsoning» og to vevde deler forbundet med løse tråder.",
+            caption: "Forsiden til Sannhets- og forsoningskommisjonens rapport, Dokument 19 (2022–2023).",
+            credit: "Rapportforside: Sannhets- og forsoningskommisjonen / Stortinget, 2023. Kunstverk: Tieto (2022), © Åsne Kummeneje Mellem / BONO 2023.",
+            sourceLabel: "Stortinget",
+            sourceUrl: "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Dokumentserien/2022-2023/dok19-202223/",
+          },
+        ],
         sources: [
           {
             label: "Sannhets- og forsoningskommisjonens rapport - Sametinget",
@@ -1010,7 +1081,10 @@ const timelineEras = [
           },
         ],
         sources: [
-          // Uavklart: «Rapport-2026-2-Undersokelse-om-samehets-og-holdninger-til-samer-og-kvener-norskfinner.pdf» har bare en lokal filadresse i Word.
+          {
+            label: "Undersøkelse om samehets og holdninger til samer og kvener/norskfinner – Proba, rapport 2026-2",
+            url: "https://proba.no/rapporter/undersokelse-om-samehets-og-holdninger-til-samer-ogkvener-norskfinner/",
+          },
           {
             label: "Sannhets- og forsoningskommisjonens rapport – Sametinget",
             url: "https://sametinget.no/sannhets-og-forsoningskommisjonens-rapport/",
@@ -1057,12 +1131,6 @@ const page = {
     "Denne tidslinjen samler {count} vendepunkter fra det historiske grunnlaget til dagens arbeid for språk, kultur, rettigheter og forsoning.",
   ],
   details: "Fordypning og kilder",
-  reconciliationLabel: "Forsoning er ikke et sluttpunkt",
-  reconciliationLines: [
-    "Forankret i sannhet.",
-    "Utviklet gjennom kunnskap.",
-    "Levd i fellesskapet.",
-  ],
   documentation: "Dokumentasjon",
   literatureTitle: "Litteratur og kilder",
   literatureSources: [

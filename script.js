@@ -29,7 +29,6 @@
       chevronDown: ["m6 9 6 6 6-6"],
       image: ["M14.5 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9.5", "m21 15-5-5L5 21", "M14 4h7v7", "M14 11 21 4"],
       mapPin: ["M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z", "M12 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"],
-      heart: ["M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6a5.5 5.5 0 0 0 1-8.8Z"],
     };
 
     svg.setAttribute("viewBox", "0 0 24 24");
@@ -79,6 +78,10 @@
     if (source) {
       if (image.credit) container.appendChild(document.createTextNode(" · "));
       container.appendChild(source);
+    }
+    if (image.licenseLabel && image.licenseUrl) {
+      if (image.credit || source) container.appendChild(document.createTextNode(" · "));
+      container.appendChild(externalLink(image.licenseUrl, image.licenseLabel, "arrowUpRight"));
     }
   }
 
@@ -263,11 +266,18 @@
   });
 
   function gallery(images, eventNumber) {
-    const galleryClass = images.length === 1 ? "gallery--single" : images.length === 3 ? "gallery--three" : "gallery--pair";
+    const hasMunicipalMap = images.some(function (image) { return image.src === "images/tromso-kommunekart.svg"; });
+    const galleryClass = images.length === 1 ? "gallery--single" : images.length === 3 && !hasMunicipalMap ? "gallery--three" : "gallery--pair";
     const container = element("div", "gallery " + galleryClass);
+    if (hasMunicipalMap) {
+      container.classList.add("gallery--municipal-maps");
+    }
     images.forEach(function (image, imageIndex) {
       const figure = document.createElement("figure");
       const wrap = element("button", "gallery__image-wrap");
+      if (image.src === "images/tromso-kommunekart.svg" || image.src === "images/sannhetskommisjonen-rapportforside.png") {
+        wrap.classList.add("gallery__image-wrap--full");
+      }
       if (image.src === "images/ullsfjordkoftegutt.png") {
         wrap.classList.add("gallery__image-wrap--ullsfjordkofte");
       }
@@ -379,21 +389,6 @@
     return shell;
   }
 
-  function reconciliation() {
-    const section = element("section", "reconciliation");
-    const symbol = element("div", "reconciliation__icon");
-    symbol.setAttribute("aria-hidden", "true");
-    symbol.appendChild(icon("heart", 28));
-    section.append(symbol, element("p", "", data.page.reconciliationLabel));
-    const title = element("h2");
-    data.page.reconciliationLines.forEach(function (line, index) {
-      if (index) title.appendChild(document.createElement("br"));
-      title.appendChild(document.createTextNode(line));
-    });
-    section.appendChild(title);
-    return section;
-  }
-
   function literatureSources() {
     const section = element("section", "image-sources");
     section.id = "litteratur-og-kilder";
@@ -434,7 +429,14 @@
       );
       if (image.credit) item.appendChild(element("span", "image-source-list__credit", image.credit));
       const source = sourceName(image);
-      if (source) item.appendChild(source);
+      if (image.licenseLabel && image.licenseUrl) {
+        const links = element("span");
+        if (source) links.append(source, document.createTextNode(" · "));
+        links.appendChild(externalLink(image.licenseUrl, image.licenseLabel, "arrowUpRight"));
+        item.appendChild(links);
+      } else if (source) {
+        item.appendChild(source);
+      }
       list.appendChild(item);
     });
     section.appendChild(list);
@@ -463,7 +465,6 @@
     eraNavigation(),
     introduction(eventCount),
     timeline(),
-    reconciliation(),
     literatureSources(),
     imageSources(),
     footer(),
